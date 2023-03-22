@@ -17,7 +17,7 @@ var currentTime = new Date();
 currentTime.getHours();
 var currentHour = currentTime.getHours();
 switch (true) {
-case (currentHour < 12):
+case (currentHour > 4 && currentHour < 12):
 document.getElementById(`day`).innerHTML = "Добрий ранок!"
 break;
 case (currentHour > 12 && currentHour < 17):
@@ -26,7 +26,7 @@ break;
 case (currentTime > 18 && currentHour < 22  ):
 document.getElementById(`day`).innerHTML = "Добрий вечір!"
 break;
-case(currentTime > 22 && currentTime < 5):
+default:
 document.getElementById(`day`).innerHTML = "Доброї ночі"
 break;
 }
