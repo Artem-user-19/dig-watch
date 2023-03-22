@@ -1,0 +1,81 @@
+body{
+    background: black;
+}
+
+.wrap{
+  display: block;
+}
+.numb{
+    text-align: center;
+    transform: translate(0%,700%);
+    font-size: 50px;
+    font-family: monospace;
+    user-select: none;
+
+background: linear-gradient(to right, #FFF 20%, blue 40%, green 60%, cyan 80%);
+background-size: 200% auto;
+
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+animation: shine 1s linear infinite;
+text-shadow: 0px 0px 60px white;
+}
+.day{
+    color: white;
+    transform: translate(0%,560%);
+    font-size: 60px;
+    font-family: monospace;
+    text-align: center;
+    background: linear-gradient(to right, #FFF 20%, blue 40%, green 60%, cyan 80%);
+    background-size: 200% auto;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 1s linear infinite;
+    text-shadow: 0px 0px 60px white;
+    user-select: none;
+    }
+    
+    .date{
+    color: white;
+    transform: translate(0%, 600%);
+    font-size: 60px;
+    letter-spacing: 60px;
+    text-align: center;
+    text-shadow: 0px 0px 60px white;
+    background: linear-gradient(to right, #FFF 20%, blue 40%, green 60%, cyan 80%);
+    background-size: 200% auto;
+    text-shadow: 0px 0px 30px white;
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: shine 1s linear infinite;
+    user-select: none;
+    }
+
+    @media (max-width: 895px) {
+        .day{
+            font-size: 40px;
+            transform: translate(0%,300%);
+        }
+        .numb{
+            transform: translate(0%, 100%);
+        }
+
+        .date{
+            transform: translate(0%,500%);
+            font-size: 40px;
+            letter-spacing: 0px;
+        }
+    }
+@keyframes shine {
+to {
+  background-position: 200% center;
+}
+}
